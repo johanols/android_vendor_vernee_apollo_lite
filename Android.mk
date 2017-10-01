@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),apollo_lite)
+ifneq ($(filter $(TARGET_DEVICE),apollo_lite apollo_x),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libhwm
